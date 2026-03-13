@@ -1,0 +1,46 @@
+main{
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.87);
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+}
+
+main > .dice-container{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat((2, auto));
+  gap: 11px;
+}
+
+.title{
+  font-size: 40px;
+  margin: 0;
+  color: #242424;;
+}
+
+.instructions{
+  font-family: 'Inter', serif;
+  font-weight: 400;
+  margin-top: 0;
+  text-align: center;
+  color: #242424;
+  font-size: 20px;
+}
+
+main > button{
+  width: auto;
+  font-weight: 500;
+  background-color: #5035ff;
+  padding: 10px 20px;
+}
+
+.sr-only > p{
+  color: #242424;
+  font-weight: 700;
+  text-align: center;
+}
